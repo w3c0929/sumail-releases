@@ -145,21 +145,6 @@ Get-Content .\app.env | Where-Object { $_ -match '^[A-Z_]+=' -and $_ -match '[^\
 
 ---
 
-## 资产命名规则
-
-同一版本、同一平台的资产名固定，tag 固定为 `v<版本>`，zip 顶层目录固定 `SuMail-Desktop/`，
-便于第三方工具按规则拼出下载地址：
-
-```
-https://github.com/w3c0929/sumail-releases/releases/download/v<版本>/SuMail-Desktop-<版本>-win-x64-portable.zip
-```
-
-## 校验
-
-| 版本 | 资产 | SHA-256 |
-|---|---|---|
-| v0.0.1 | `SuMail-Desktop-0.0.1-win-x64-portable.zip` | `9f083e9c98c1745b49c63f7b26a7e48452a512230df1002302d78d907eeabc58` |
-
 ## 反馈
 
 遇到 Bug 或使用问题，请到 [Issues](https://github.com/w3c0929/sumail-releases/issues)。
